@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="darklight.css" />
+    <script defer src="app.js"></script>
+    <script defer src="darklight.js"></script>
+    <title>Pokedex</title>
+  </head>
+  <body id="body" class="body">
+    <header class="header">
+      <div class="controls">
+        <label for="darkM" >Dark Mode</label>
+        <input type="radio" name="theme" id="darkM" value="dark" />
+        <label for="lightM">Light Mode</label>
+        <input type="radio" name="theme" id="lightM" value="light" />
+        
+      </div>
+      <h1 class="heading">Pokedex</h1>
+      <div class="search">
+        <p><input type="search" id="searchBox" placeholder="SEARCH"></p>
+      </div>
+    </header>
+    <main>
+        <div class="wrapper">
+        <div class="choose">
+        <h2>Cuántos pokemons quieres ver? <input type="number" id="num" value="5"></h2>
+        <span><button type="submit" id="btn__start" class="btn">See pokemons</button></span>
+      </div>
+
+        <!--section para pintar las tarjetas-->
+        <section id="render"></section>
+
+        <!--template para las tarjetas-->
+
+        <template id="template__card">
+          <article id="" class="card__wrapper">
+            <div class="card__poke">
+              <div class="card__front">
+                <h2 class="name__poke"></h2>
+                <img src="" alt="" class="img__poke" />
+               <p><button type="submit" class="btn btn__extra">Más Info</button></p>
+                
+              </div>
+
+           </div>
+          </article>
+        </template>
+      </div>
+    </main>
+
+    <div class="modal" id="modal" class="hidden">
+        <div class="modal__wrapper">
+            <span class="close__modal">&times</span>-->
+            <!--section para pintar las tarjetas-->
+        <section id="render2"></section>
+
+        <!--template para las tarjetas-->
+
+        <template id="template__card2">
+          <article id="" class="card__wrapper2">
+            <div class="card__poke2">
+              <div class="card__front2">
+                <h2 class="name__poke2"></h2>
+                <img src="" alt="" class="img__poke2" />
+
+                <div class="ab__poke">
+                  <span class="ab ab1"></span>
+                  <span class="ab ab2"></span>
+                </div>
+                <div class="types__poke">
+                  <span class="type__poke type__poke1"></span>
+                  <!--<span class="type__poke type__poke2"></span>-->
+                </div>
+
+                <div class="stats__pokemon">
+                  <p>·STATS·</p>
+                  <ul class="stats__wrapper">
+                    <p class="stat hp"></p>
+                    <p class="stat attack"></p>
+                    <p class="stat defense"></p>
+                    <p class="stat sp__attack"></p>
+                    <p class="stat sp__def"></p>
+                    <p class="stat speed"></p>
+                    <!--<p><span class="stat hp"></span></p>
+                    <p><span class="stat attack"></span></p>
+                    <p><span class="stat defense"></span></p>
+                    <p><span class="stat sp__attack"></span></p>
+                    <p><span class="stat sp__def"></span></p>
+                    <p><span class="stat speed"></span></p>-->
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </template>
+            
+        </div>
+    </div>-->
+
+
+
+
+    
+
+    <footer></footer>
+  </body>
+</html>

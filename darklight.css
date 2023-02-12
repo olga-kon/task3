@@ -1,0 +1,31 @@
+:root {
+    --dark-blue: #526cb1;
+    
+    --light-blue: lightblue;
+
+}
+
+
+body.light {
+    background-color: white;
+    color: var(--dark-blue);
+}
+
+body.dark {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.card__poke2.dark {
+
+    background-color: var(--dark-blue);
+    color: white;
+
+}
+
+.card__poke2.light {
+    background-color: white;
+    color: var(--dark-blue);
+}
+
+

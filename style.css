@@ -1,0 +1,178 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body > p h2 {
+  color: #526cb1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-height: 150px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 3px 3px rgba(2, 2, 2, 0.1);
+  border-radius: 10px;
+  border: none;
+  background-color: #526cb1;
+  font-weight: 600;
+  color: white;
+}
+#btn__start {
+  margin: 0 5px;
+}
+
+h1 {
+  text-align: center;
+}
+#render {
+  max-width: 100%;
+  margin-top: 100px;
+  display: grid;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  gap: 2rem;
+}
+
+.wrapper {
+  max-width: 1200px;
+  padding: 10px 10px;
+}
+
+.choose {
+  display: flex;
+}
+.card__wrapper {
+  position: relative;
+  overflow: visible;
+}
+.card__poke {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 2px rgba(100, 100, 100, 0.2);
+  background-color: white;
+
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  transition: 0.8s;
+}
+
+.name__poke {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #526cb1;
+}
+
+/*modal style*/
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal__wrapper {
+  margin: 5% auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.close__modal {
+  color: #aaa;
+  font-size: 32px;
+  font-weight: bold;
+  float: right;
+  background-color: white;
+}
+
+.close__modal:hover,
+.close__modal:focus {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.type__poke {
+  display: inline-block;
+  background-color: #526cb1;
+  border-radius: 10px;
+  color: white;
+  font-size: 28px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+#render {
+  max-width: 100%;
+  display: grid;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  gap: 2rem;
+}
+
+.card__wrapper2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.card__poke2 {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 2px rgba(100, 100, 100, 0.2);
+  background-color: white;
+
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  transition: 0.8s;
+}
+
+.name__poke2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.stats__pokemon {
+  width: 80%;
+
+  color: white;
+  margin: 5px auto;
+  font-size: 22px;
+  background-color: #526cb1;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.stats__wrapper {
+  list-style: none;
+}
